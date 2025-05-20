@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 20px auto;
+    line-height: 100px;
+    font-size: 2rem;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+  
+  .animate {
+    animation: bounce 1s ease forwards;
+  }
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+  
+  body.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #fff;
+  }
+  
